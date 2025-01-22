@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: n8n
+    env: docker
+    plan: free
+    image: n8nio/n8n:latest
+    envVars:
+      - key: N8N_ENCRYPTION_KEY
+        value: votre_cle_secrete_robuste # ⚠️ Obligatoire (32 caractères)
+      - key: N8N_HOST
+        value: 0.0.0.0
+    healthCheckPath: /healthzs
