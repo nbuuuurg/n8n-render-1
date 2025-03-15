@@ -6,7 +6,7 @@ services:
     image: n8nio/n8n:latest
     envVars:
       - key: N8N_ENCRYPTION_KEY
-        value: votre_cle_secrete_robuste # ⚠️ Obligatoire (32 caractères)
+        value: 0.0.0.0
       - key: N8N_HOST
         value: 0.0.0.0
       - key: N8N_PORT
